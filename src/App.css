@@ -18,7 +18,7 @@
   font-size: calc(30px + 5vmin);
   color: white;
   width: 100%;
-  padding: 10px;
+  padding: 10px 0px;
 }
 
 .search-container {
