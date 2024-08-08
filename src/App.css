@@ -1,0 +1,101 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  min-height: 100vh;
+  font-size: 16px;  /* 1em = 16px */
+  color: #333;
+  background-color: white;
+}
+
+.App-header {
+  background-color: #505668;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(30px + 5vmin);
+  color: white;
+  width: 100%;
+  padding: 10px;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.search-input {
+  width: calc(100% - 100px);
+  max-width: 500px;
+  height: 30px;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-button {
+  height: 40px;
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+/* we need to make a loading animation for search results */
+
+.lds-dual-ring,
+.lds-dual-ring:after {
+  box-sizing: border-box;
+}
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6.4px solid currentColor;
+  border-color: currentColor transparent currentColor transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.tooltip-content {
+  display: flex;
+  max-width: 300px;
+  flex-direction:column;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.search-results {
+  max-width: 800px;
+
+}
+
+.tooltip_a {
+  color: #33f;
+}
